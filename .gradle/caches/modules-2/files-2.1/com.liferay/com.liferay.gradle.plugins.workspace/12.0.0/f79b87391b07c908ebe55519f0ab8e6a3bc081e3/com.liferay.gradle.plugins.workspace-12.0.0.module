@@ -1,0 +1,390 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.liferay",
+    "module": "com.liferay.gradle.plugins.workspace",
+    "version": "12.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "biz.aQute.bnd",
+          "module": "biz.aQute.bnd.gradle",
+          "version": {
+            "requires": "6.4.0"
+          }
+        },
+        {
+          "group": "com.bmuschko",
+          "module": "gradle-docker-plugin",
+          "version": {
+            "requires": "6.7.0"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-yaml",
+          "version": {
+            "requires": "2.16.1"
+          }
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.ant.bnd",
+          "version": {
+            "requires": "3.2.12"
+          }
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins",
+          "version": {
+            "requires": "15.0.79"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.css.builder",
+          "version": {
+            "requires": "5.0.14"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.poshi.runner",
+          "version": {
+            "requires": "4.0.18"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.source.formatter",
+          "version": {
+            "requires": "5.2.150"
+          }
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.target.platform",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.theme.builder",
+          "version": {
+            "requires": "2.0.27"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.portal.tools.bundle.support",
+          "version": {
+            "requires": "3.7.6"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.portal.tools.soy.builder",
+          "version": {
+            "requires": "3.0.6"
+          },
+          "excludes": [
+            {
+              "group": "org.sonatype.plexus",
+              "module": "*"
+            },
+            {
+              "group": "org.codehaus.plexus",
+              "module": "*"
+            },
+            {
+              "group": "com.google.template",
+              "module": "soy"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.release.util",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "de.undercouch",
+          "module": "gradle-download-task",
+          "version": {
+            "requires": "5.4.0"
+          }
+        },
+        {
+          "group": "net.java.dev.jna",
+          "module": "jna",
+          "version": {
+            "requires": "5.8.0"
+          }
+        },
+        {
+          "group": "net.saliman",
+          "module": "gradle-properties-plugin",
+          "version": {
+            "requires": "1.4.6"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "5.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "com.liferay.gradle.plugins.workspace-12.0.0.jar",
+          "url": "com.liferay.gradle.plugins.workspace-12.0.0.jar",
+          "size": 422755,
+          "sha512": "4c71f0aae79031d4949240525644e130cfed912c07551ff518a5681f0981ba22c90de238621c9ac9d01a6ff246a8cb829bc200a511a60a3d9422e7bbe22b235b",
+          "sha256": "b51255cc76da6ca18cafca8781a88e7e1952f7ad67a7de45f4c5ddf1af28efa1",
+          "sha1": "7846f2c54ae854d3dbfd882e12071ba685f2ee43",
+          "md5": "fe6767020ab8b62b02bcf0dee931d95d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "biz.aQute.bnd",
+          "module": "biz.aQute.bnd.gradle",
+          "version": {
+            "requires": "6.4.0"
+          }
+        },
+        {
+          "group": "com.bmuschko",
+          "module": "gradle-docker-plugin",
+          "version": {
+            "requires": "6.7.0"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-yaml",
+          "version": {
+            "requires": "2.16.1"
+          }
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.ant.bnd",
+          "version": {
+            "requires": "3.2.12"
+          }
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins",
+          "version": {
+            "requires": "15.0.79"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.css.builder",
+          "version": {
+            "requires": "5.0.14"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.poshi.runner",
+          "version": {
+            "requires": "4.0.18"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.source.formatter",
+          "version": {
+            "requires": "5.2.150"
+          }
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.target.platform",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.gradle.plugins.theme.builder",
+          "version": {
+            "requires": "2.0.27"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.portal.tools.bundle.support",
+          "version": {
+            "requires": "3.7.6"
+          },
+          "excludes": [
+            {
+              "group": "biz.aQute.bnd",
+              "module": "biz.aQute.bnd"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.portal.tools.soy.builder",
+          "version": {
+            "requires": "3.0.6"
+          },
+          "excludes": [
+            {
+              "group": "org.sonatype.plexus",
+              "module": "*"
+            },
+            {
+              "group": "org.codehaus.plexus",
+              "module": "*"
+            },
+            {
+              "group": "com.google.template",
+              "module": "soy"
+            }
+          ]
+        },
+        {
+          "group": "com.liferay",
+          "module": "com.liferay.release.util",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "de.undercouch",
+          "module": "gradle-download-task",
+          "version": {
+            "requires": "5.4.0"
+          }
+        },
+        {
+          "group": "net.java.dev.jna",
+          "module": "jna",
+          "version": {
+            "requires": "5.8.0"
+          }
+        },
+        {
+          "group": "net.saliman",
+          "module": "gradle-properties-plugin",
+          "version": {
+            "requires": "1.4.6"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "5.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "com.liferay.gradle.plugins.workspace-12.0.0.jar",
+          "url": "com.liferay.gradle.plugins.workspace-12.0.0.jar",
+          "size": 422755,
+          "sha512": "4c71f0aae79031d4949240525644e130cfed912c07551ff518a5681f0981ba22c90de238621c9ac9d01a6ff246a8cb829bc200a511a60a3d9422e7bbe22b235b",
+          "sha256": "b51255cc76da6ca18cafca8781a88e7e1952f7ad67a7de45f4c5ddf1af28efa1",
+          "sha1": "7846f2c54ae854d3dbfd882e12071ba685f2ee43",
+          "md5": "fe6767020ab8b62b02bcf0dee931d95d"
+        }
+      ]
+    }
+  ]
+}
